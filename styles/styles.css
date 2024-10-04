@@ -13,7 +13,7 @@ h1 {color: steelblue;
 
 }
 
-img{
+img{/*this is a comment */
     width: 150px;
     height: auto;
     border: 1px solid steelblue;
