@@ -1,0 +1,156 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* Body Styling */
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #505033;
+  background-color: #f7f7f7;
+  line-height: 1.6;
+  padding: 10px;
+}
+
+/* Header Styling */
+header {
+  background-color: #264969;
+  padding: 10px;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Automatically wrap the items when needed */
+}
+
+header img {
+  height: 50px;
+}
+
+header a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 0 15px;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #b4cde4;
+  padding: 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-family: 'Georgia', serif;
+  color: #264969;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.hero img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/* Article inside Hero Section */
+.hero article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  border: 2px solid #505033;
+}
+
+.hero article img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.hero article p {
+  text-align: center;
+}
+
+/* Main Content Sections */
+section {
+  background-color: #cfcfb4;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+section h2 {
+  font-family: 'Georgia', serif;
+  color: #264969;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+section p, section img {
+  margin-bottom: 15px;
+}
+
+section img {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #505033;
+  margin: 10px 0;
+}
+
+/* Image Gallery Section */
+section img {
+  max-width: 100%;
+  height: auto;
+  margin: 10px auto;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #264969;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  margin-bottom: 10px;
+}
+
+.sociallinks {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap; /* Automatically wrap social icons */
+}
+
+.sociallinks a img {
+  height: 30px;
+  width: 30px;
+}
+
+/* Flexbox and Grid Layout for Natural Responsiveness */
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+

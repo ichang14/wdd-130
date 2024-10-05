@@ -1,15 +1,20 @@
+:root{
+    --primary-color:steelblue;
+    --secondary-color: white;
+
+}
 nav{
-    background-color: steelblue;
+    background-color: var(--primary-color);
     padding: 10px;
 }
 
 nav a {
-    color: white;
+    color: var(--secondary-color);
     display: block;
     padding: 20px;
 }
 
-h1 {color: steelblue;
+h1 {color: var(--primary-color);
 
 }
 
@@ -33,8 +38,8 @@ aside{
     margin: 1rem;
     border: 1px solid rgba(0, 0, 0, 0.2);
     padding: 1rem;
-    background-color: steelblue;
-    color: #ffffff;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
     text-align: center;
 }
 aside img{
