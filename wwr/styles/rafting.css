@@ -5,7 +5,6 @@
   box-sizing: border-box;
 }
 
-
 /* Body Styling */
 body {
   font-family: 'Roboto', sans-serif;
@@ -15,31 +14,38 @@ body {
   padding: 10px;
 }
 
-/* Header Styling */
+/* Header Styling using CSS Grid */
 header {
   background-color: #264969;
   padding: 10px;
-}
-
-header nav {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: auto 1fr auto; /* Logo, Title, Nav */
   align-items: center;
-  flex-wrap: wrap; /* Automatically wrap the items when needed */
 }
 
 header img {
   height: 50px;
 }
 
-header a {
+header h1 {
+  color: #fff;
+  text-align: center;
+}
+
+header nav {
+  display: flex;
+  justify-content: flex-end; /* Align links to the right */
+  gap: 15px;
+}
+
+header nav a {
   color: #fff;
   text-decoration: none;
   font-weight: 700;
-  padding: 0 15px;
+  padding: 0 10px;
 }
 
-header a:hover {
+header nav a:hover {
   text-decoration: underline;
 }
 
@@ -63,7 +69,6 @@ header a:hover {
   margin-bottom: 20px;
 }
 
-/* Article inside Hero Section */
 .hero article {
   display: flex;
   flex-direction: column;
@@ -73,49 +78,46 @@ header a:hover {
   border: 2px solid #505033;
 }
 
-.hero article img {
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 10px;
+/* Adventures Section */
+.adventures {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive columns */
+  gap: 20px;
+  padding: 20px;
 }
 
-.hero article p {
+.adventures figure {
   text-align: center;
 }
 
-/* Main Content Sections */
-section {
-  background-color: #cfcfb4;
-  padding: 20px;
-  margin: 20px 0;
+.adventures img {
+  width: 100%;
+  height: auto;
 }
 
-section h2 {
+.adventures figcaption {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #264969;
+}
+
+/* History Section */
+.history {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #cfcfb4;
+}
+
+.history h2, .adventures h2 {
   font-family: 'Georgia', serif;
   color: #264969;
   font-weight: 700;
   margin-bottom: 10px;
 }
 
-section p, section img {
-  margin-bottom: 15px;
-}
-
-section img {
-  max-width: 100%;
-  height: auto;
-  border: 2px solid #505033;
-  margin: 10px 0;
-}
-
-/* Image Gallery Section */
-section img {
-  max-width: 100%;
-  height: auto;
-  margin: 10px auto;
-}
-
-/* Footer Styling */
+/* Footer Styling with Flexbox */
 footer {
   background-color: #264969;
   color: #fff;
@@ -123,34 +125,18 @@ footer {
   text-align: center;
 }
 
-footer p {
-  margin-bottom: 10px;
-}
-
-.sociallinks {
+footer .sociallinks {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end; /* Align icons to the right */
   gap: 10px;
-  flex-wrap: wrap; /* Automatically wrap social icons */
 }
 
-.sociallinks a img {
+footer .sociallinks img {
   height: 30px;
   width: 30px;
 }
 
-/* Flexbox and Grid Layout for Natural Responsiveness */
-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+footer p {
+  margin-bottom: 10px;
 }
-
-.hero {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 
