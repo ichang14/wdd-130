@@ -78,21 +78,30 @@ header nav a:hover {
   border: 2px solid #505033;
 }
 
-/* Adventures Section */
+/* Center the figures and images in the adventures section */
+section {
+  text-align: center; 
+}
+
 .adventures {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive columns */
-  gap: 20px;
+  display: flex;
+  justify-content: center; 
+  flex-wrap: wrap; 
+  gap: 20px; 
   padding: 20px;
 }
 
 .adventures figure {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  max-width: 250px; 
 }
 
 .adventures img {
   width: 100%;
   height: auto;
+  display: block;
 }
 
 .adventures figcaption {
@@ -100,6 +109,7 @@ header nav a:hover {
   font-weight: bold;
   color: #264969;
 }
+
 
 /* History Section */
 .history {
@@ -127,7 +137,7 @@ footer {
 
 footer .sociallinks {
   display: flex;
-  justify-content: flex-end; /* Align icons to the right */
+  justify-content: flex-end; 
   gap: 10px;
 }
 
