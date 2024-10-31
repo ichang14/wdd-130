@@ -3,29 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ilich Chang | White water Rafting | Home</title>
+    <title>Ilich Chang | White Water Rafting | Home</title>
     <meta name="description" content="Contact White Water Rafting for any inquiries, reservations, or feedback. Our team is ready to assist you with your adventure planning.">
-    <meta name="author" content="whitewater rafting">
+    <meta name="author" content="White Water Rafting">
     <link rel="stylesheet" href="styles/rafting.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-
 </head>
 <body>
     <header>
         <nav>
             <a href="/index.html">
                 <img src="images/logo.jpg" alt="Rafting logo">            
+            </a>
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
-            <a href="trip.html">Trip</a>
+            <a href="trip.html">Trips</a>
             <a href="contact.html">Contact Us</a>
         </nav>
     </header>
+
     <main>
-        <h1>Rafting </h1>
-        <img src="images/index1.jpg" alt="main images">
+        <!-- New Welcome Section with River Levels -->
+        <section id="welcome">
+            <h1>Explore Our Rafting Adventures!</h1>
+            <p>Choose your ideal river journey based on your desired level of challenge. We offer guided rafting trips through three unique rivers, each catering to a different skill level and adventure intensity.</p>
+            <button onclick="window.location.href='trip.html'">Book Your Adventure</button>
+        </section>
+
+        <!-- River Levels with Images Linked to "Trips" -->
+        <section id="river-levels">
+            <h2>Our Rivers</h2>
+            <div class="river">
+                <h3>Green River - Beginner</h3>
+                <p>Perfect for those new to rafting, this calm yet scenic river offers a relaxed adventure with beautiful surroundings.</p>
+                <a href="trip.html">
+                    <img src="images/river1.jpg" alt="Green River - Beginner Level">
+                </a>
+            </div>
+            <div class="river">
+                <h3>Brave River - Intermediate</h3>
+                <p>For those seeking a moderate challenge, the Brave River features thrilling yet manageable rapids.</p>
+                <a href="trip.html">
+                    <img src="images/river2.jpg" alt="Brave River - Intermediate Level">
+                </a>
+            </div>
+            <div class="river">
+                <h3>Serpent River - Advanced</h3>
+                <p>Designed for experienced adventurers, the Serpent River is full of intense rapids and requires skill and bravery.</p>
+                <a href="trip.html">
+                    <img src="images/river 3.jpg" alt="Serpent River - Advanced Level">
+                </a>
+            </div>
+        </section>
     </main>
+
+    <footer>
+        <p>Follow us on social media to see our customers' adventures and get news and promotions. Don’t miss out on our upcoming experiences!</p>
+        <div class="sociallinks">
+            <a href="https://facebook.com">
+                <img src="images/facebook.png" alt="facebook">
+            </a>
+            <a href="https://youtube.com">
+                <img src="images/youtube.png" alt="Youtube">
+            </a>
+            <a href="https://x.com">
+                <img src="images/x.png" alt="X">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram.png" alt="Instagram">
+            </a>
+        </div>
+        <p>&copy; 2024 🚣White Water Rafting. All rights reserved 🚣 Ilich Chang</p>
+    </footer>
 </body>
 </html>

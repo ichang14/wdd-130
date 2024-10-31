@@ -43,15 +43,11 @@ header h1 {
   margin: 0;
   padding: 10px 0;
   font-size: 1.5rem;
-  padding: 15px 0;
- 
-  
 }
-
 
 header nav {
   display: flex;
-  justify-content: flex-end; /* Align links to the right */
+  justify-content: flex-end;
   gap: 15px;
 }
 
@@ -155,7 +151,7 @@ footer {
 
 footer .sociallinks {
   display: flex;
-  justify-content: flex-end; 
+  justify-content: center; 
   gap: 10px;
 }
 
@@ -170,23 +166,23 @@ footer p {
 
 /* Form styling */
 form {
-  max-width: 400px; /* Limit the width of the form */
-  margin: 0 auto; /* Center the form */
+  max-width: 400px;
+  margin: 0 auto;
   padding: 20px;
-  background-color: var(--secondary-color); /* Optional background for distinction */
-  border: 1px solid var(--accent-color); /* Optional border for clarity */
-  border-radius: 8px; /* Add some corner rounding */
+  background-color: var(--secondary-color);
+  border: 1px solid var(--accent-color);
+  border-radius: 8px;
 }
 
 /* Inputs and textarea */
 form input[type="text"],
 form input[type="email"],
 form textarea {
-  width: 100%; /* Make inputs take full width */
+  width: 100%;
   padding: 8px;
   border: 1px solid var(--accent-color);
   border-radius: 4px;
-  box-sizing: border-box; /* Make sure padding doesn't affect width */
+  box-sizing: border-box;
 }
 
 /* Radio buttons and checkboxes */
@@ -197,7 +193,7 @@ form input[type="checkbox"] {
 
 /* Button styling */
 button {
-  width: 100%; /* Full-width button */
+  width: 100%;
   padding: 10px 0;
   background-color: var(--button-color);
   color: var(--secondary-color);
@@ -210,24 +206,143 @@ button:hover {
   background-color: var(--button-hover-color);
 }
 
-
 /* Media Queries for responsiveness */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   header {
     grid-template-columns: 1fr;
     text-align: center;
   }
 
   .hero article, .history, .adventures {
-    padding: 10px;
+    padding: 15px;
   }
 
   .adventures {
     flex-direction: column;
-    gap: 15px;
+    gap: 20px;
   }
 
   .sociallinks {
     justify-content: center;
+  }
+}
+
+/* Specific styling for the images in the Trip section */
+#trip img {
+  max-width: 100%;
+  width: 600px; /* Adjust the size for Trip section images */
+  height: auto;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+#river-levels .river {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+}
+
+#river-levels .river img {
+  max-width: 100%; 
+  width: 550px;
+  height: auto;
+  border-radius: 8px;
+}
+#trip {
+  text-align: center;
+  padding: 20px;
+}
+
+#trip h1 {
+  color: var(--primary-color);
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.trip-image img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.trip-info h2, #trip-details h2, #itinerary h2, #includes h2, #should-bring h2 {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.trip-info p, #trip-details ul, #itinerary .day, #includes ul, #should-bring ul {
+  text-align: left;
+  max-width: 800px;
+  margin: 0 auto 20px auto;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+h3 {
+  color: var(--primary-color);
+  font-size: 1.25rem;
+  margin-top: 15px;
+}
+
+/* Specific styling for the Itinerary section */
+.day {
+  background-color: #f0f0f0;
+  padding: 15px;
+  border-left: 4px solid var(--primary-color);
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+/* Footer Styling */
+footer {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 20px;
+  text-align: center;
+}
+
+footer .sociallinks {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+footer .sociallinks img {
+  width: 20px;
+  height: 20px;
+}
+
+footer p {
+  margin-top: 10px;
+}
+
+/* Responsive Styling */
+@media (max-width: 800px) {
+  header {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .trip-info h2, h3 {
+    font-size: 1.25rem;
+  }
+
+  .day {
+    padding: 10px;
+  }
+
+  .sociallinks img {
+    width: 18px;
+    height: 18px;
   }
 }
