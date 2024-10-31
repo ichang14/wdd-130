@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ilich Chang | White Water Rafting | Home</title>
+    <title>Ilich Chang | WDD 130 | White water Rafting | Home</title>
     <meta name="description" content="Contact White Water Rafting for any inquiries, reservations, or feedback. Our team is ready to assist you with your adventure planning.">
     <meta name="author" content="White Water Rafting">
     <link rel="stylesheet" href="styles/rafting.css">
@@ -25,14 +25,25 @@
     </header>
 
     <main>
-        <!-- New Welcome Section with River Levels -->
+        
         <section id="welcome">
             <h1>Explore Our Rafting Adventures!</h1>
             <p>Choose your ideal river journey based on your desired level of challenge. We offer guided rafting trips through three unique rivers, each catering to a different skill level and adventure intensity.</p>
             <button onclick="window.location.href='trip.html'">Book Your Adventure</button>
         </section>
-
-        <!-- River Levels with Images Linked to "Trips" -->
+        <section id="newsletter">
+            <h2>Subscribe to our Newsletter</h2>
+            <form action="subscribe.html" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <button type="submit">Sign Up</button>
+            </form>
+        </section>
+        
         <section id="river-levels">
             <h2>Our Rivers</h2>
             <div class="river">

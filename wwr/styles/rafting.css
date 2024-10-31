@@ -29,7 +29,7 @@ header {
   background-color: var(--primary-color);
   padding: 10px;
   display: grid;
-  grid-template-columns: auto 1fr auto; /* Logo, Title, Nav */
+  grid-template-columns: auto 1fr auto; 
   align-items: center;
 }
 
@@ -230,7 +230,7 @@ button:hover {
 /* Specific styling for the images in the Trip section */
 #trip img {
   max-width: 100%;
-  width: 600px; /* Adjust the size for Trip section images */
+  width: 600px; 
   height: auto;
   border-radius: 8px;
   margin: 20px 0;
@@ -326,7 +326,7 @@ footer p {
   margin-top: 10px;
 }
 
-/* Responsive Styling */
+
 @media (max-width: 800px) {
   header {
     grid-template-columns: 1fr;
@@ -344,5 +344,31 @@ footer p {
   .sociallinks img {
     width: 18px;
     height: 18px;
+  }
+}
+#newsletter form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+@media (max-width: 800px) {
+  .grid-content {
+    grid-template-columns: 1fr;
   }
 }
